@@ -48,7 +48,7 @@
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Eletrônica, projetos, componentes e PCB</h1>
+                    <h1 class="display-4 fw-bolder">Códigos e Firmwares das placas AL</h1>
                     <p class="lead fw-normal text-white-50 mb-0">Vá sempre além do que é esperado</p>
                 </div>
             </div>
@@ -56,210 +56,257 @@
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-1 row-cols-xl-1 justify-content-center">
                     <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/image/AL-1_V2.0_Red_preview_rev_1.png" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">AL-1</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    R$70.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Blink Pin 8</h5>
+                        </div>
+                        <div class="card h-100">                            
+                            <!-- Codigo -->
+                            <pre><code contentEditable="false">
+// the setup function runs once when you press reset or power the board
+void setup() {
+// initialize digital pin 8 as an output.
+pinMode(8, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+delay(1000);             // wait for a second
+digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+delay(1000);             // wait for a second
+}
+                            </code></pre>
                         </div>
                     </div>
                     <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/image/AL-2_V2.2_Red_preview_rev_1.png" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">AL-2</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">R$80.00</span>
-                                    R$75.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Relé Pin 7</h5>
+                        </div>
+                        <div class="card h-100">                            
+                            <!-- Codigo -->
+                            <pre><code contentEditable="false">
+// the setup function runs once when you press reset or power the board
+void setup() {
+    // initialize digital pin 7 as an output.
+    pinMode(7, OUTPUT);      // Relay is instaled on pin 7 
+}
+
+// the loop function runs over and over again forever
+void loop() {
+    digitalWrite(7, HIGH);   // turn the Relay on (HIGH is the voltage level)
+    delay(1000);             // wait for a second
+    digitalWrite(7, LOW);    // turn the Relay off by making the voltage LOW
+    delay(1000);             // wait for a second
+}
+                            </code></pre>
                         </div>
                     </div>
                     <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/image/AL-B_V1.0_Red_preview_rev_1.png" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">AL-B</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">R$50.00</span>
-                                    R$40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Servo SG09</h5>
+                        </div>
+                        <div class="card h-100">                            
+                            <!-- Codigo -->
+                            <pre><code contentEditable="false">
+#include <Servo.h> //INCLUSÃO DA BIBLIOTECA NECESSÁRIA
+
+const int pinoServo = 10; //PINO DIGITAL UTILIZADO PELO SERVO  
+    
+Servo s; //OBJETO DO TIPO SERVO
+int pos; //POSIÇÃO DO SERVO
+    
+void setup (){
+    s.attach(pinoServo); //ASSOCIAÇÃO DO PINO DIGITAL AO OBJETO DO TIPO SERVO
+    s.write(0); //INICIA O MOTOR NA POSIÇÃO 0º
+}
+void loop(){
+    for(pos = 0; pos < 120; pos++){ //PARA "pos" IGUAL A 0, ENQUANTO "pos" MENOR QUE 120, INCREMENTA "pos"
+    s.write(pos); //ESCREVE O VALOR DA POSIÇÃO QUE O SERVO DEVE GIRAR
+    delay(15); //INTERVALO DE 15 MILISSEGUNDOS
+    }
+    delay(1000); //INTERVALO DE 1 SEGUNDO
+    for(pos = 120; pos >= 0; pos--){ //PARA "pos" IGUAL A 120, ENQUANTO "pos" MAIOR OU IGUAL QUE 0, DECREMENTA "pos"
+    s.write(pos); //ESCREVE O VALOR DA POSIÇÃO QUE O SERVO DEVE GIRAR
+    delay(15); //INTERVALO DE 15 MILISSEGUNDOS
+    }
+}
+                            </code></pre>
                         </div>
                     </div>
                     <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/image/Bateria_18650.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Batteria 18650 2600 mAh</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    R$40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Display 16x2 i2c</h5>
+                        </div>
+                        <div class="card h-100">                            
+                            <!-- Codigo -->
+                            <pre><code contentEditable="false">
+#include <Wire.h> //INCLUSÃO DA BIBLIOTECA NECESSÁRIA
+void setup()
+{
+    Wire.begin();
+    
+    Serial.begin(9600);
+    while (!Serial);             
+    Serial.println("\nI2C Scanner");
+}
+    
+void loop()
+{
+    byte error, address;
+    int nDevices;
+    nDevices = 0;
+    for(address = 1; address < 127; address++ )
+    {
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+    if (error == 0)
+    {
+        Serial.print("Endereço I2C encontrado: 0x");
+        if (address<16)
+        Serial.print("0 ");
+        Serial.println(address,HEX);
+
+    
+        nDevices++;
+    }
+    else if (error==4)
+    {
+        Serial.print("ERRO ");
+        if (address<16)
+        Serial.print("0");
+        Serial.println(address,HEX);
+    }    
+    }
+    if (nDevices == 0)
+    Serial.println("Nenhum endereço i2C encontrado ");
+    else
+    
+    Serial.println(" Feito !");
+    
+    delay(5000);         
+}
+                            </code></pre>
                         </div>
                     </div>
                     <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/image/display_16x2_i2c.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Display_16x2_i2c</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">DHT11 com Display 16x2 i2c</h5>
+                        </div>
+                        <div class="card h-100">                            
+                            <!-- Codigo -->
+                            <pre><code contentEditable="false">
+#include <Wire.h> // Biblioteca utilizada para fazer a comunicação com o I2C
+#include <LiquidCrystal_I2C.h> // Biblioteca utilizada para fazer a comunicação com o display 20x4 
+
+#include "DHT.h"
+
+#define col 16 // Serve para definir o numero de colunas do display utilizado
+#define lin  2 // Serve para definir o numero de linhas do display utilizado
+#define ende  0x27 // Serve para definir o endereço do display.
+
+#define DHTPIN 9 // pino que estamos conectado
+#define DHTTYPE DHT11 // DHT 11
+
+DHT dht(DHTPIN, DHTTYPE);
+
+LiquidCrystal_I2C lcd(ende,col,lin); // Chamada da funcação LiquidCrystal para ser usada com o I2C
+
+byte umidade;
+float temperatura;
+
+void setup() //Incia o display
+{  
+    dht.begin();
+    
+    lcd.init(); // Serve para iniciar a comunicação com o display já conectado
+    lcd.backlight(); // Serve para ligar a luz do display
+    lcd.clear(); // Serve para limpar a tela do display
+}
+void loop() 
+{
+    umidade = dht.readHumidity();
+    temperatura = dht.readTemperature();
+    
+    lcd.setCursor(0,0); // Coloca o cursor do display na coluna 0 e linha 0
+    lcd.print("Temp: "); // Comando de saída com a mensagem que deve aparecer na coluna 0 e linha 0.
+    lcd.setCursor(6,0); //Coloca o cursor do display na coluna 6 e linha 0
+    lcd.print(temperatura,1);  // Comando de saida com a mensagem que deve aparecer na coluna 6 e linha 0
+    lcd.setCursor(11,0); //Coloca o cursor do display na coluna 11 e linha 0
+    lcd.print("C");  // Comando de saida com a mensagem que deve aparecer na coluna 11 e linha 0
+    lcd.setCursor(0,1); // Coloca o cursor do display na coluna 0 e linha 1
+    lcd.print("Umid: "); // Comando de saída com a mensagem que deve aparecer na coluna 0 e linha 1.
+    lcd.setCursor(6,1); //Coloca o cursor do display na coluna 6 e linha 1
+    lcd.print(umidade);  // Comando de saida com a mensagem que deve aparecer na coluna 6 e linha 1
+    lcd.setCursor(9,1); //Coloca o cursor do display na coluna 9 e linha 1
+    lcd.print("%");  // Comando de saida com a mensagem que deve aparecer na coluna 9 e linha 1
+    delay(5000);  // delay de 5 segundos com todas as mensagens na tela
+    lcd.clear(); // Limpa o display até o loop ser reiniciado
+}
+                            </code></pre>
                         </div>
                     </div>
                     <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/image/DRV8825.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Driver DRV8825</h5>
-                                    <!-- Product price-->
-                                    $120.00 - $280.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Control motor de passo DRV8825</h5>
                         </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/image/Nano.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Nano V3.0 Mini USB</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/image/oled_0.96.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Oled 0.96</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
+                        <div class="card h-100">                            
+                            <!-- Codigo -->
+                            <pre><code contentEditable="false">
+// Define pin connections & motor's steps per revolution
+const int dirPin = A0;
+const int stepPin = A1;
+const int slpPin = A2;
+const int rstPin = A3;
+const int stepsPerRevolution = 200;
+
+void setup()
+{
+    // Declare pins as Outputs
+    pinMode(stepPin, OUTPUT);
+    pinMode(dirPin, OUTPUT);
+    pinMode(slpPin, OUTPUT);
+    pinMode(rstPin, OUTPUT);
+
+    digitalWrite(slpPin, HIGH);
+    digitalWrite(rstPin, HIGH);
+}
+void loop()
+{
+    // Set motor direction clockwise
+    digitalWrite(dirPin, HIGH);
+
+    // Spin motor slowly
+    for(int x = 0; x < stepsPerRevolution; x++)
+    {
+    digitalWrite(stepPin, HIGH);
+    delayMicroseconds(2000);
+    digitalWrite(stepPin, LOW);
+    delayMicroseconds(2000);
+    }
+    delay(1000); // Wait a second
+    
+    // Set motor direction counterclockwise
+    digitalWrite(dirPin, LOW);
+
+    // Spin motor quickly
+    for(int x = 0; x < stepsPerRevolution; x++)
+    {
+    digitalWrite(stepPin, HIGH);
+    delayMicroseconds(1000);
+    digitalWrite(stepPin, LOW);
+    delayMicroseconds(1000);
+    }
+    delay(1000); // Wait a second
+}
+                            </code></pre>
                         </div>
                     </div>
                 </div>
