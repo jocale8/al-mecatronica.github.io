@@ -27,7 +27,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><a class="dropdown-item" href="index.html">All Products</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="#!">Popular Items</a></li>
                                 <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
@@ -57,6 +57,7 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-1 row-cols-xl-1 justify-content-center">
+<!-------------------------------------------------- Start Codes ---------------------------------------------------------------->
                     <div class="col mb-5">
                         <!-- Product name-->
                         <div class="card h-100">
@@ -86,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-
+<!-------------------------------------------------- New Code ---------------------------------------------------------------->
                     <div class="col mb-5">
                         <!-- Product name-->
                         <div class="card h-100">
@@ -112,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-
+<!-------------------------------------------------- New Code ---------------------------------------------------------------->
                     <div class="col mb-5">
                         <!-- Product name-->
                         <div class="card h-100">
@@ -147,7 +148,7 @@ Servo s; <span style="color: #888888">//OBJETO DO TIPO SERVO</span>
                             </div>
                         </div>
                     </div>
-
+<!-------------------------------------------------- New Code ---------------------------------------------------------------->
                     <div class="col mb-5">
                         <!-- Product name-->
                         <div class="card h-100">
@@ -190,7 +191,7 @@ LiquidCrystal_I2C <span style="color: #0066BB; font-weight: bold">lcd</span>(end
                             </div>
                         </div>
                     </div>
-
+<!-------------------------------------------------- New Code ---------------------------------------------------------------->
                     <div class="col mb-5">
                         <!-- Product name-->
                         <div class="card h-100">
@@ -233,7 +234,7 @@ LiquidCrystal_I2C <span style="color: #0066BB; font-weight: bold">lcd</span>(end
                             </div>
                         </div>
                     </div> 
-
+<!-------------------------------------------------- New Code ---------------------------------------------------------------->
                     <div class="col mb-5">
                         <!-- Product name-->
                         <div class="card h-100">
@@ -290,14 +291,11 @@ byte umidade;
     delay(<span style="color: #0000DD; font-weight: bold">5000</span>);  <span style="color: #888888">// delay de 5 segundos com todas as mensagens na tela</span>
     lcd.clear(); <span style="color: #888888">// Limpa o display até o loop ser reiniciado</span>
 }
-</pre></div>
-    
-
-
+                                </pre></div>
                             </div>
                         </div>
                     </div>
-
+<!-------------------------------------------------- New Code ---------------------------------------------------------------->
                     <div class="col mb-5">
                         <!-- Product name-->
                         <div class="card h-100">
@@ -353,14 +351,51 @@ byte umidade;
     }
     delay(<span style="color: #0000DD; font-weight: bold">1000</span>); <span style="color: #888888">// Wait a second</span>
 }
-</pre></div>
-
+                                </pre></div>
                             </div>
                         </div>
                     </div>
+<!-------------------------------------------------- New Code ---------------------------------------------------------------->
+                    <div class="col mb-5">
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                RS-485
+                            </div>
+                            <div class="card-body">                             
+                                <!-- Codigo -->
+                                <div><pre style="margin: 0; line-height: 125%">
+<span style="color: #557799">#define TxRxPin 6 </span><span style="color: #888888">//HIGH:TX e LOW:RX Para o RS-485</span>
+<span style="color: #557799">#define LedPin 8</span>
 
-                   
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() {
+    Serial.begin(<span style="color: #0000DD; font-weight: bold">9600</span>);
+    pinMode(TxRxPin, OUTPUT);
+    pinMode(LedPin, OUTPUT);
+}
 
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() {
+    digitalWrite(TxRxPin, HIGH);       <span style="color: #888888">// RS485 como transmissor</span>
+    Serial.println(<span style="background-color: #fff0f0">&quot;--&gt; Que horas são?&quot;</span>);
+    delay(<span style="color: #0000DD; font-weight: bold">20</span>);                         <span style="color: #888888">// Aguarda um pouco emcuanto envia a mensagem</span>
+    
+    digitalWrite(TxRxPin, LOW);        <span style="color: #888888">// RS485 como receptor</span>
+    digitalWrite(LedPin, HIGH);        <span style="color: #888888">// Led indica que estara aguardando uma resposta</span>
+    
+    <span style="color: #008800; font-weight: bold">while</span>(Serial.available() <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>){}   <span style="color: #888888">// Espera por algum dado disponivel</span>
+    
+    digitalWrite(LedPin, LOW);         <span style="color: #888888">// Led desliga indicando que chegou uma mensagem</span>
+    String text <span style="color: #333333">=</span> Serial.readString(); <span style="color: #888888">// Lê até o timeout</span>
+    text.trim();                       <span style="color: #888888">// Remove \r \n whitespace do final do string  </span>
+    Serial.print(<span style="background-color: #fff0f0">&quot;&lt;-- &quot;</span>);
+    Serial.println(text);
+    delay(<span style="color: #0000DD; font-weight: bold">5000</span>); 
+}
+                                </pre></div>
+                            </div>
+                        </div>
+                    </div>
+<!-------------------------------------------------- End Codes ---------------------------------------------------------------->
                 </div>
             </div>
         </section>
