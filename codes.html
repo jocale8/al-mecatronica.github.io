@@ -58,218 +58,265 @@
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-1 row-cols-xl-1 justify-content-center">
                     <div class="col mb-5">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Blink Pin 8</h5>
-                        </div>
-                        <div class="card h-100">                            
-                            <!-- Codigo -->
-                            <pre><code contentEditable="false">
-// the setup function runs once when you press reset or power the board
-void setup() {
-// initialize digital pin 8 as an output.
-pinMode(8, OUTPUT);
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Blink Pin 8
+                            </div>
+                            <div class="card-body">
+                                <!-- Codigo -->     
+                                <div><pre style="margin: 0; line-height: 125%">
+<span style="color: #888888">// the setup function runs once when you press reset or power the board</span>
+<span style="color: #333399; font-weight: bold">void </span><span style="color: #0066BB; font-weight: bold">setup</span>() {
+    <span style="color: #888888">// initialize digital pin 8 as an output.</span>
+    pinMode(<span style="color: #0000DD; font-weight: bold">8</span>, OUTPUT);
 }
 
-// the loop function runs over and over again forever
-void loop() {
-digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
-delay(1000);             // wait for a second
-digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
-delay(1000);             // wait for a second
+<span style="color: #888888">// the loop function runs over and over again forever</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() {
+    digitalWrite(<span style="color: #0000DD; font-weight: bold">8</span>, HIGH);   <span style="color: #888888">// turn the LED on (HIGH is the voltage level)</span>
+    delay(<span style="color: #0000DD; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
+    digitalWrite(<span style="color: #0000DD; font-weight: bold">8</span>, LOW);    <span style="color: #888888">// turn the LED off by making the voltage LOW</span>
+    delay(<span style="color: #0000DD; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
 }
-                            </code></pre>
+                                </pre></div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Relé Pin 7</h5>
-                        </div>
-                        <div class="card h-100">                            
-                            <!-- Codigo -->
-                            <pre><code contentEditable="false">
-// the setup function runs once when you press reset or power the board
-void setup() {
-    // initialize digital pin 7 as an output.
-    pinMode(7, OUTPUT);      // Relay is instaled on pin 7 
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Relé Pin 7
+                            </div>
+                            <div class="card-body">                           
+                                <!-- Codigo -->
+                                <div><pre style="margin: 0; line-height: 125%"><span style="color: #888888">// the setup function runs once when you press reset or power the board</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() {
+    <span style="color: #888888">// initialize digital pin 7 as an output.</span>
+    pinMode(<span style="color: #0000DD; font-weight: bold">7</span>, OUTPUT);      <span style="color: #888888">// Relay is instaled on pin 7 </span>
 }
 
-// the loop function runs over and over again forever
-void loop() {
-    digitalWrite(7, HIGH);   // turn the Relay on (HIGH is the voltage level)
-    delay(1000);             // wait for a second
-    digitalWrite(7, LOW);    // turn the Relay off by making the voltage LOW
-    delay(1000);             // wait for a second
+<span style="color: #888888">// the loop function runs over and over again forever</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() {
+    digitalWrite(<span style="color: #0000DD; font-weight: bold">7</span>, HIGH);   <span style="color: #888888">// turn the Relay on (HIGH is the voltage level)</span>
+    delay(<span style="color: #0000DD; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
+    digitalWrite(<span style="color: #0000DD; font-weight: bold">7</span>, LOW);    <span style="color: #888888">// turn the Relay off by making the voltage LOW</span>
+    delay(<span style="color: #0000DD; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
 }
-                            </code></pre>
+                                </pre></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Servo SG09</h5>
-                        </div>
-                        <div class="card h-100">                            
-                            <!-- Codigo -->
-                            <pre><code contentEditable="false">
-#include <Servo.h> //INCLUSÃO DA BIBLIOTECA NECESSÁRIA
 
-const int pinoServo = 10; //PINO DIGITAL UTILIZADO PELO SERVO  
+                    <div class="col mb-5">
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Servo SG09
+                            </div>
+                            <div class="card-body">                             
+                                <!-- Codigo -->
+                                <div><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include  </span><span style="color: #888888">//INCLUSÃO DA BIBLIOTECA NECESSÁRIA</span>
+
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> pinoServo <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">10</span>; <span style="color: #888888">//PINO DIGITAL UTILIZADO PELO SERVO  </span>
     
-Servo s; //OBJETO DO TIPO SERVO
-int pos; //POSIÇÃO DO SERVO
+Servo s; <span style="color: #888888">//OBJETO DO TIPO SERVO</span>
+<span style="color: #333399; font-weight: bold">int</span> pos; <span style="color: #888888">//POSIÇÃO DO SERVO</span>
     
-void setup (){
-    s.attach(pinoServo); //ASSOCIAÇÃO DO PINO DIGITAL AO OBJETO DO TIPO SERVO
-    s.write(0); //INICIA O MOTOR NA POSIÇÃO 0º
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span> (){
+    s.attach(pinoServo); <span style="color: #888888">//ASSOCIAÇÃO DO PINO DIGITAL AO OBJETO DO TIPO SERVO</span>
+    s.write(<span style="color: #0000DD; font-weight: bold">0</span>); <span style="color: #888888">//INICIA O MOTOR NA POSIÇÃO 0º</span>
 }
-void loop(){
-    for(pos = 0; pos < 120; pos++){ //PARA "pos" IGUAL A 0, ENQUANTO "pos" MENOR QUE 120, INCREMENTA "pos"
-    s.write(pos); //ESCREVE O VALOR DA POSIÇÃO QUE O SERVO DEVE GIRAR
-    delay(15); //INTERVALO DE 15 MILISSEGUNDOS
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>(){
+    <span style="color: #008800; font-weight: bold">for</span>(pos <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; pos <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">120</span>; pos<span style="color: #333333">++</span>){ <span style="color: #888888">//PARA &quot;pos&quot; IGUAL A 0, ENQUANTO &quot;pos&quot; MENOR QUE 120, INCREMENTA &quot;pos&quot;</span>
+    s.write(pos); <span style="color: #888888">//ESCREVE O VALOR DA POSIÇÃO QUE O SERVO DEVE GIRAR</span>
+    delay(<span style="color: #0000DD; font-weight: bold">15</span>); <span style="color: #888888">//INTERVALO DE 15 MILISSEGUNDOS</span>
     }
-    delay(1000); //INTERVALO DE 1 SEGUNDO
-    for(pos = 120; pos >= 0; pos--){ //PARA "pos" IGUAL A 120, ENQUANTO "pos" MAIOR OU IGUAL QUE 0, DECREMENTA "pos"
-    s.write(pos); //ESCREVE O VALOR DA POSIÇÃO QUE O SERVO DEVE GIRAR
-    delay(15); //INTERVALO DE 15 MILISSEGUNDOS
+    delay(<span style="color: #0000DD; font-weight: bold">1000</span>); <span style="color: #888888">//INTERVALO DE 1 SEGUNDO</span>
+    <span style="color: #008800; font-weight: bold">for</span>(pos <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">120</span>; pos <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>; pos<span style="color: #333333">--</span>){ <span style="color: #888888">//PARA &quot;pos&quot; IGUAL A 120, ENQUANTO &quot;pos&quot; MAIOR OU IGUAL QUE 0, DECREMENTA &quot;pos&quot;</span>
+    s.write(pos); <span style="color: #888888">//ESCREVE O VALOR DA POSIÇÃO QUE O SERVO DEVE GIRAR</span>
+    delay(<span style="color: #0000DD; font-weight: bold">15</span>); <span style="color: #888888">//INTERVALO DE 15 MILISSEGUNDOS</span>
     }
 }
-                            </code></pre>
+                                </pre></div>
+                            </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Display 16x2 i2c</h5>
-                        </div>
-                        <div class="card h-100">                            
-                            <!-- Codigo -->
-                            <pre><code contentEditable="false">
-#include <Wire.h> //INCLUSÃO DA BIBLIOTECA NECESSÁRIA
-void setup()
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Display 16x2 i2c
+                            </div>
+                            <div class="card-body">                             
+                                <!-- Codigo -->
+                                <div><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include  </span><span style="color: #888888">// Biblioteca utilizada para fazer a comunicação com o I2C</span>
+<span style="color: #557799">#include  </span><span style="color: #888888">// Biblioteca utilizada para fazer a comunicação com o display 20x4 </span>
+
+<span style="color: #557799">#define col 16     </span><span style="color: #888888">// Serve para definir o numero de colunas do display utilizado</span>
+<span style="color: #557799">#define lin  2     </span><span style="color: #888888">// Serve para definir o numero de linhas do display utilizado</span>
+<span style="color: #557799">#define ende  0x27 </span><span style="color: #888888">// Serve para definir o endereço do display.</span>
+
+LiquidCrystal_I2C <span style="color: #0066BB; font-weight: bold">lcd</span>(ende,col,lin); <span style="color: #888888">// Chamada da funcação LiquidCrystal para ser usada com o I2C</span>
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() <span style="color: #888888">//Incia o display</span>
+{  
+    lcd.init();      <span style="color: #888888">// Serve para iniciar a comunicação com o display já conectado</span>
+    lcd.backlight(); <span style="color: #888888">// Serve para ligar a luz do display</span>
+    lcd.clear();     <span style="color: #888888">// Serve para limpar a tela do display</span>
+}
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() 
 {
-    Wire.begin();
-    
-    Serial.begin(9600);
-    while (!Serial);             
-    Serial.println("\nI2C Scanner");
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">0</span>);         <span style="color: #888888">// Coloca o cursor do display na coluna 2 e linha 0</span>
+    lcd.print(<span style="background-color: #fff0f0">&quot;Quer aprender&quot;</span>); <span style="color: #888888">// Comando de saída com a mensagem que deve aparecer na coluna 2 e linha 0.</span>
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">4</span>,<span style="color: #0000DD; font-weight: bold">1</span>);         <span style="color: #888888">//Coloca o cursor do display na coluna 4 e linha 1</span>
+    lcd.print(<span style="background-color: #fff0f0">&quot;Arduino?&quot;</span>);      <span style="color: #888888">// Comando de saida com a mensagem que deve aparecer na coluna 4 e linha 1</span>
+    delay(<span style="color: #0000DD; font-weight: bold">5000</span>);                <span style="color: #888888">// delay de 5 segundos com todas as mensagens na tela</span>
+    lcd.clear();                <span style="color: #888888">// Limpa o display até o loop ser reiniciado</span>
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">4</span>,<span style="color: #0000DD; font-weight: bold">0</span>);         <span style="color: #888888">// Coloca o cursor do display na coluna 4 e linha 0</span>
+    lcd.print(<span style="background-color: #fff0f0">&quot;PCB AL-1 &quot;</span>);     <span style="color: #888888">// Comando de saída com a mensagem que deve aparecer na coluna 4 e linha 0.</span>
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">1</span>);         <span style="color: #888888">//Coloca o cursor do display na coluna 2 e linha 1</span>
+    lcd.print(<span style="background-color: #fff0f0">&quot;Plug &amp; Play &quot;</span>);  <span style="color: #888888">// Comando de saida com a mensagem que deve aparecer na coluna 2 e linha 1</span>
+    delay(<span style="color: #0000DD; font-weight: bold">5000</span>);                <span style="color: #888888">// delay de 5 segundos com todas as mensagens na tela</span>
+    lcd.clear();                <span style="color: #888888">// Limpa o display até o loop ser reiniciado</span>
 }
-    
-void loop()
-{
-    byte error, address;
-    int nDevices;
-    nDevices = 0;
-    for(address = 1; address < 127; address++ )
-    {
-    Wire.beginTransmission(address);
-    error = Wire.endTransmission();
-    if (error == 0)
-    {
-        Serial.print("Endereço I2C encontrado: 0x");
-        if (address<16)
-        Serial.print("0 ");
-        Serial.println(address,HEX);
-
-    
-        nDevices++;
-    }
-    else if (error==4)
-    {
-        Serial.print("ERRO ");
-        if (address<16)
-        Serial.print("0");
-        Serial.println(address,HEX);
-    }    
-    }
-    if (nDevices == 0)
-    Serial.println("Nenhum endereço i2C encontrado ");
-    else
-    
-    Serial.println(" Feito !");
-    
-    delay(5000);         
-}
-                            </code></pre>
+                                </pre></div>
+                            </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">DHT11 com Display 16x2 i2c</h5>
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                HC-SR04
+                            </div>
+                            <div class="card-body">                             
+                                <!-- Codigo -->
+                                <div><pre style="margin: 0; line-height: 125%">
+<span style="color: #888888">// defines pins numbers</span>
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> trigPin <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">5</span>;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> echoPin <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">4</span>;
+<span style="color: #888888">// defines variables</span>
+<span style="color: #333399; font-weight: bold">long</span> duration;
+<span style="color: #333399; font-weight: bold">float</span> distance;
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() {
+    pinMode(trigPin, OUTPUT); <span style="color: #888888">// Sets the trigPin as an Output</span>
+    pinMode(echoPin, INPUT);  <span style="color: #888888">// Sets the echoPin as an Input</span>
+    Serial.begin(<span style="color: #0000DD; font-weight: bold">9600</span>);       <span style="color: #888888">// Starts the serial communication</span>
+}
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() {
+    <span style="color: #888888">// Clears the trigPin</span>
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(<span style="color: #0000DD; font-weight: bold">2</span>);
+    <span style="color: #888888">// Sets the trigPin on HIGH state for 10 micro seconds</span>
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(<span style="color: #0000DD; font-weight: bold">10</span>);
+    digitalWrite(trigPin, LOW);
+    <span style="color: #888888">// Reads the echoPin, returns the sound wave travel time in microseconds</span>
+    duration <span style="color: #333333">=</span> pulseIn(echoPin, HIGH);
+    <span style="color: #888888">// Calculating the distance</span>
+    distance <span style="color: #333333">=</span> duration <span style="color: #333333">*</span> <span style="color: #6600EE; font-weight: bold">0.034</span> <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">2</span>;
+    <span style="color: #888888">// Prints the distance on the Serial Monitor</span>
+    Serial.print(<span style="background-color: #fff0f0">&quot;Distance: &quot;</span>);
+    Serial.print(distance, <span style="color: #0000DD; font-weight: bold">2</span>);
+    Serial.println(<span style="background-color: #fff0f0">&quot; cm&quot;</span>);
+    delay(<span style="color: #0000DD; font-weight: bold">1000</span>);
+}
+                                </pre></div>
+                            </div>
                         </div>
-                        <div class="card h-100">                            
-                            <!-- Codigo -->
-                            <pre><code contentEditable="false">
-#include <Wire.h> // Biblioteca utilizada para fazer a comunicação com o I2C
-#include <LiquidCrystal_I2C.h> // Biblioteca utilizada para fazer a comunicação com o display 20x4 
+                    </div> 
 
-#include "DHT.h"
+                    <div class="col mb-5">
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                DHT11 com Display 16x2 i2c
+                            </div>
+                            <div class="card-body">                             
+                                <!-- Codigo -->
+                                <div><pre style="margin: 0; line-height: 125%">
+<span style="color: #557799">#include  </span><span style="color: #888888">// Biblioteca utilizada para fazer a comunicação com o I2C</span>
+<span style="color: #557799">#include  </span><span style="color: #888888">// Biblioteca utilizada para fazer a comunicação com o display 20x4 </span>
 
-#define col 16 // Serve para definir o numero de colunas do display utilizado
-#define lin  2 // Serve para definir o numero de linhas do display utilizado
-#define ende  0x27 // Serve para definir o endereço do display.
+<span style="color: #557799">#include &quot;DHT.h&quot;</span>
 
-#define DHTPIN 9 // pino que estamos conectado
-#define DHTTYPE DHT11 // DHT 11
+<span style="color: #557799">#define col 16 </span><span style="color: #888888">// Serve para definir o numero de colunas do display utilizado</span>
+<span style="color: #557799">#define lin  2 </span><span style="color: #888888">// Serve para definir o numero de linhas do display utilizado</span>
+<span style="color: #557799">#define ende  0x27 </span><span style="color: #888888">// Serve para definir o endereço do display.</span>
 
-DHT dht(DHTPIN, DHTTYPE);
+<span style="color: #557799">#define DHTPIN 9 </span><span style="color: #888888">// pino que estamos conectado</span>
+<span style="color: #557799">#define DHTTYPE DHT11 </span><span style="color: #888888">// DHT 11</span>
 
-LiquidCrystal_I2C lcd(ende,col,lin); // Chamada da funcação LiquidCrystal para ser usada com o I2C
+DHT <span style="color: #0066BB; font-weight: bold">dht</span>(DHTPIN, DHTTYPE);
+
+LiquidCrystal_I2C <span style="color: #0066BB; font-weight: bold">lcd</span>(ende,col,lin); <span style="color: #888888">// Chamada da funcação LiquidCrystal para ser usada com o I2C</span>
 
 byte umidade;
-float temperatura;
+<span style="color: #333399; font-weight: bold">float</span> temperatura;
 
-void setup() //Incia o display
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() <span style="color: #888888">//Incia o display</span>
 {  
     dht.begin();
     
-    lcd.init(); // Serve para iniciar a comunicação com o display já conectado
-    lcd.backlight(); // Serve para ligar a luz do display
-    lcd.clear(); // Serve para limpar a tela do display
+    lcd.init(); <span style="color: #888888">// Serve para iniciar a comunicação com o display já conectado</span>
+    lcd.backlight(); <span style="color: #888888">// Serve para ligar a luz do display</span>
+    lcd.clear(); <span style="color: #888888">// Serve para limpar a tela do display</span>
 }
-void loop() 
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() 
 {
-    umidade = dht.readHumidity();
-    temperatura = dht.readTemperature();
+    umidade <span style="color: #333333">=</span> dht.readHumidity();
+    temperatura <span style="color: #333333">=</span> dht.readTemperature();
     
-    lcd.setCursor(0,0); // Coloca o cursor do display na coluna 0 e linha 0
-    lcd.print("Temp: "); // Comando de saída com a mensagem que deve aparecer na coluna 0 e linha 0.
-    lcd.setCursor(6,0); //Coloca o cursor do display na coluna 6 e linha 0
-    lcd.print(temperatura,1);  // Comando de saida com a mensagem que deve aparecer na coluna 6 e linha 0
-    lcd.setCursor(11,0); //Coloca o cursor do display na coluna 11 e linha 0
-    lcd.print("C");  // Comando de saida com a mensagem que deve aparecer na coluna 11 e linha 0
-    lcd.setCursor(0,1); // Coloca o cursor do display na coluna 0 e linha 1
-    lcd.print("Umid: "); // Comando de saída com a mensagem que deve aparecer na coluna 0 e linha 1.
-    lcd.setCursor(6,1); //Coloca o cursor do display na coluna 6 e linha 1
-    lcd.print(umidade);  // Comando de saida com a mensagem que deve aparecer na coluna 6 e linha 1
-    lcd.setCursor(9,1); //Coloca o cursor do display na coluna 9 e linha 1
-    lcd.print("%");  // Comando de saida com a mensagem que deve aparecer na coluna 9 e linha 1
-    delay(5000);  // delay de 5 segundos com todas as mensagens na tela
-    lcd.clear(); // Limpa o display até o loop ser reiniciado
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">0</span>,<span style="color: #0000DD; font-weight: bold">0</span>); <span style="color: #888888">// Coloca o cursor do display na coluna 0 e linha 0</span>
+    lcd.print(<span style="background-color: #fff0f0">&quot;Temp: &quot;</span>); <span style="color: #888888">// Comando de saída com a mensagem que deve aparecer na coluna 0 e linha 0.</span>
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">6</span>,<span style="color: #0000DD; font-weight: bold">0</span>); <span style="color: #888888">//Coloca o cursor do display na coluna 6 e linha 0</span>
+    lcd.print(temperatura,<span style="color: #0000DD; font-weight: bold">1</span>);  <span style="color: #888888">// Comando de saida com a mensagem que deve aparecer na coluna 6 e linha 0</span>
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">11</span>,<span style="color: #0000DD; font-weight: bold">0</span>); <span style="color: #888888">//Coloca o cursor do display na coluna 11 e linha 0</span>
+    lcd.print(<span style="background-color: #fff0f0">&quot;C&quot;</span>);  <span style="color: #888888">// Comando de saida com a mensagem que deve aparecer na coluna 11 e linha 0</span>
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">0</span>,<span style="color: #0000DD; font-weight: bold">1</span>); <span style="color: #888888">// Coloca o cursor do display na coluna 0 e linha 1</span>
+    lcd.print(<span style="background-color: #fff0f0">&quot;Umid: &quot;</span>); <span style="color: #888888">// Comando de saída com a mensagem que deve aparecer na coluna 0 e linha 1.</span>
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">6</span>,<span style="color: #0000DD; font-weight: bold">1</span>); <span style="color: #888888">//Coloca o cursor do display na coluna 6 e linha 1</span>
+    lcd.print(umidade);  <span style="color: #888888">// Comando de saida com a mensagem que deve aparecer na coluna 6 e linha 1</span>
+    lcd.setCursor(<span style="color: #0000DD; font-weight: bold">9</span>,<span style="color: #0000DD; font-weight: bold">1</span>); <span style="color: #888888">//Coloca o cursor do display na coluna 9 e linha 1</span>
+    lcd.print(<span style="background-color: #fff0f0">&quot;%&quot;</span>);  <span style="color: #888888">// Comando de saida com a mensagem que deve aparecer na coluna 9 e linha 1</span>
+    delay(<span style="color: #0000DD; font-weight: bold">5000</span>);  <span style="color: #888888">// delay de 5 segundos com todas as mensagens na tela</span>
+    lcd.clear(); <span style="color: #888888">// Limpa o display até o loop ser reiniciado</span>
 }
-                            </code></pre>
+</pre></div>
+    
+
+
+                            </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Control motor de passo DRV8825</h5>
-                        </div>
-                        <div class="card h-100">                            
-                            <!-- Codigo -->
-                            <pre><code contentEditable="false">
-// Define pin connections & motor's steps per revolution
-const int dirPin = A0;
-const int stepPin = A1;
-const int slpPin = A2;
-const int rstPin = A3;
-const int stepsPerRevolution = 200;
 
-void setup()
+                    <div class="col mb-5">
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Control motor de passo DRV8825
+                            </div>
+                            <div class="card-body">                             
+                                <!-- Codigo -->
+                                <div><pre style="margin: 0; line-height: 125%">
+<span style="color: #888888">// Define pin connections &amp; motor&#39;s steps per revolution</span>
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> dirPin <span style="color: #333333">=</span> A0;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> stepPin <span style="color: #333333">=</span> A1;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> slpPin <span style="color: #333333">=</span> A2;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> rstPin <span style="color: #333333">=</span> A3;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> stepsPerRevolution <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">200</span>;
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>()
 {
-    // Declare pins as Outputs
+    <span style="color: #888888">// Declare pins as Outputs</span>
     pinMode(stepPin, OUTPUT);
     pinMode(dirPin, OUTPUT);
     pinMode(slpPin, OUTPUT);
@@ -278,37 +325,42 @@ void setup()
     digitalWrite(slpPin, HIGH);
     digitalWrite(rstPin, HIGH);
 }
-void loop()
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>()
 {
-    // Set motor direction clockwise
+    <span style="color: #888888">// Set motor direction clockwise</span>
     digitalWrite(dirPin, HIGH);
 
-    // Spin motor slowly
-    for(int x = 0; x < stepsPerRevolution; x++)
+    <span style="color: #888888">// Spin motor slowly</span>
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; x <span style="color: #333333">&lt;</span> stepsPerRevolution; x<span style="color: #333333">++</span>)
     {
     digitalWrite(stepPin, HIGH);
-    delayMicroseconds(2000);
+    delayMicroseconds(<span style="color: #0000DD; font-weight: bold">2000</span>);
     digitalWrite(stepPin, LOW);
-    delayMicroseconds(2000);
+    delayMicroseconds(<span style="color: #0000DD; font-weight: bold">2000</span>);
     }
-    delay(1000); // Wait a second
+    delay(<span style="color: #0000DD; font-weight: bold">1000</span>); <span style="color: #888888">// Wait a second</span>
     
-    // Set motor direction counterclockwise
+    <span style="color: #888888">// Set motor direction counterclockwise</span>
     digitalWrite(dirPin, LOW);
 
-    // Spin motor quickly
-    for(int x = 0; x < stepsPerRevolution; x++)
+    <span style="color: #888888">// Spin motor quickly</span>
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; x <span style="color: #333333">&lt;</span> stepsPerRevolution; x<span style="color: #333333">++</span>)
     {
     digitalWrite(stepPin, HIGH);
-    delayMicroseconds(1000);
+    delayMicroseconds(<span style="color: #0000DD; font-weight: bold">1000</span>);
     digitalWrite(stepPin, LOW);
-    delayMicroseconds(1000);
+    delayMicroseconds(<span style="color: #0000DD; font-weight: bold">1000</span>);
     }
-    delay(1000); // Wait a second
+    delay(<span style="color: #0000DD; font-weight: bold">1000</span>); <span style="color: #888888">// Wait a second</span>
 }
-                            </code></pre>
+</pre></div>
+
+                            </div>
                         </div>
                     </div>
+
+                   
+
                 </div>
             </div>
         </section>
