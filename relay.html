@@ -113,21 +113,21 @@
                             <div class="card-header">
                                 Relé Pin 7
                             </div>
-                            <div class="card-body">
+                            <div class="card-body bg-dark">
                                 <!-- Codigo -->     
-                                <div><pre style="margin: 0; line-height: 125%">
+                                <div class="text-white"><pre style="margin: 0; line-height: 125%">
 <span style="color: #888888">// the setup function runs once when you press reset or power the board</span>
-<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() {
+<span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() {
     <span style="color: #888888">// initialize digital pin 7 as an output.</span>
-    pinMode(<span style="color: #0000DD; font-weight: bold">7</span>, OUTPUT);      <span style="color: #888888">// Relay is instaled on pin 7 </span>
+    pinMode(<span style="color: #3fec87; font-weight: bold">7</span>, OUTPUT);      <span style="color: #888888">// Relay is instaled on pin 7 </span>
 }
 
 <span style="color: #888888">// the loop function runs over and over again forever</span>
-<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() {
-    digitalWrite(<span style="color: #0000DD; font-weight: bold">7</span>, HIGH);   <span style="color: #888888">// turn the Relay on (HIGH is the voltage level)</span>
-    delay(<span style="color: #0000DD; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
-    digitalWrite(<span style="color: #0000DD; font-weight: bold">7</span>, LOW);    <span style="color: #888888">// turn the Relay off by making the voltage LOW</span>
-    delay(<span style="color: #0000DD; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
+<span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() {
+    digitalWrite(<span style="color: #3fec87; font-weight: bold">7</span>, HIGH);   <span style="color: #888888">// turn the Relay on (HIGH is the voltage level)</span>
+    delay(<span style="color: #3fec87; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
+    digitalWrite(<span style="color: #3fec87; font-weight: bold">7</span>, LOW);    <span style="color: #888888">// turn the Relay off by making the voltage LOW</span>
+    delay(<span style="color: #3fec87; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
 }
                                 </pre></div>
                             </div>
