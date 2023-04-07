@@ -23,7 +23,21 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="codes.html">Codes</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Codes</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="blink.html">Blink</a></li>
+                                <li><a class="dropdown-item" href="relay.html">Relé</a></li>
+                                <li><a class="dropdown-item" href="#!">Servo SG09</a></li>
+                                <li><a class="dropdown-item" href="#!">Display 16x2 I2C</a></li>
+                                <li><a class="dropdown-item" href="#!">HC-SR04</a></li>
+                                <li><a class="dropdown-item" href="#!">DHT11 com Display 16x2 I2C</a></li>
+                                <li><a class="dropdown-item" href="#!">DRV8825</a></li>
+                                <li><a class="dropdown-item" href="#!">RS-485</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="codes.html">Todos os codes</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -34,6 +48,7 @@
                             </ul>
                         </li>
                     </ul>
+                    <!--
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
                             <i class="bi-cart-fill me-1"></i>
@@ -41,6 +56,7 @@
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>
+                    -->
                 </div>
             </div>
         </nav>
@@ -96,7 +112,8 @@
                             </div>
                             <div class="card-body">                           
                                 <!-- Codigo -->
-                                <div><pre style="margin: 0; line-height: 125%"><span style="color: #888888">// the setup function runs once when you press reset or power the board</span>
+                                <div><pre style="margin: 0; line-height: 125%">
+<span style="color: #888888">// the setup function runs once when you press reset or power the board</span>
 <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() {
     <span style="color: #888888">// initialize digital pin 7 as an output.</span>
     pinMode(<span style="color: #0000DD; font-weight: bold">7</span>, OUTPUT);      <span style="color: #888888">// Relay is instaled on pin 7 </span>
