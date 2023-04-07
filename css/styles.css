@@ -1855,6 +1855,21 @@ progress {
   border-color: var(--bs-table-border-color);
 }
 
+.object-fit-cover{
+  -o-object-fit:cover!important;
+  object-fit:cover!important;
+}
+
+.object-fit-scale{
+  -o-object-fit:scale-down!important;
+  object-fit:scale-down!important;
+}
+
+video.sm-video {
+  width: 30rem;
+  height: auto;
+}
+
 .table-info {
   --bs-table-color: #000;
   --bs-table-bg: #cff4fc;

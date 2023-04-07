@@ -6686,8 +6686,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-light {
-  color: #000 !important;
-  background-color: RGBA(248, 249, 250, var(--bs-bg-opacity, 1)) !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .text-bg-dark {
