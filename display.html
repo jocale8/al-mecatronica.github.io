@@ -5,25 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>ALPCIS - Sobre nós</title>
+        <title>ALPCIS - Exemplos</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/AL-logo.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/styles2.css" rel="stylesheet" />
-        
     </head>
     <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg3.mp4" type="video/mp4" /></video> 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
@@ -32,10 +22,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Loja</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Loja</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Sobre nós</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exemplos</a>
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exemplos</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="blink.html">Blink</a></li>
                                 <li><a class="dropdown-item" href="relay.html">Relé</a></li>
@@ -47,15 +37,6 @@
                                 <li><a class="dropdown-item" href="rs485.html">RS-485</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="codes.html">Todos os Exemplos</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="index.html">All Products</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -71,22 +52,119 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">Coming Soon</h1>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Display LCD 16x2</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">A comunicação I2C simplifica a comunicação entre dispositivos</p>
                 </div>
             </div>
-        </div>
-        <!-- Social Icons-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-md-1 row-cols-xl-1 justify-content-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-6 px-0">
+                                <img src="assets/image/Display_i2c.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p class="lead">O módulo I2C para display LCD 16x2 ou 20x4 tem como principal função simplificar as conexões e facilitar a utilização de displays LCD ao microcontrolador.</p>
+                    <p class="lead">O conversor deve ser acoplado ao display LCD por meio da conexão dos seus 16 pinos.</p>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-4 px-0">
+                                <img src="assets/image/display_16x2_i2c.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p class="lead">O módulo I2C conta com dois pinos para controle da luz de fundo do visor do display, que se encontram conectados por um jumper, por padrão. Assim, a luz de fundo estará sempre ligada. Você pode remover este jumper para desligar a luz de fundo do display.</p>
+                    <p class="lead">Além disto, a placa conta com um pequeno trimpot para fazer ajustes finos no contraste do display e um barramento para configuração do endereço I2C.</p>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-8 px-0">
+                                <img src="assets/image/display_16x2_i2c_2.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p class="lead">Na parte lateral, o módulo I2C conta com quatro pinos para conexão com qualquer microcontrolador que suporte o protocolo de comunicação I2C.</p>
+                    <p class="lead">Para integrar à placa AL-1 ou AL-2, estes pinos debem ser substituidos por um conector header macho de 180 reto.</p>
+                    <p></p>
+                    <h2 style="font-size:22px"><strong>BIBLIOTECAS NECESSARIAS</strong></h2>
+                    <p></p>
+                    <p class="lead">Para fazer a comunicação do modulo I2C o Arduino, vamos utilizar a biblioteca Wire.h que já se encontra instalada com o Arduino IDE.</p>
+                    <p class="lead">Vamos usar também a biblioteca LiquidCrystal_I2C.h que permite controlar displays I2C com funções exatamente semelhantes à biblioteca LiquidCrystal. Para instalá-la, abra o Gerenciador de Bibliotecas através do caminho: Ferramentas>Gerenciar Bibliotecas… ou por meio do atalho Ctrl+Shift+I. Em seguida, busque por LiquidCrystal I2C e clique em instalar.</p>
+                    <p></p>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-8 px-0">
+                                <img src="assets/image/display_16x2_i2c_3.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p></p>
+<!-------------------------------------------------- Start Codes ---------------------------------------------------------------->
+                    <div class="col mb-5">
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Display 16x2 i2c
+                            </div>
+                            <div class="card-body bg-dark">
+                                <!-- Codigo -->     
+                                <div class="text-white"><pre style="margin: 0; line-height: 125%">
+<span style="color: #557799">#include <font color="#d35400">&lt;Wire.h&gt;</font> </span><span style="color: #888888">// Biblioteca utilizada para fazer a comunicação com o I2C</span>
+<span style="color: #557799">#include <font color="#d35400">&lt;LiquidCrystal_I2C.h&gt;</font> </span><span style="color: #888888">// Biblioteca utilizada para fazer a comunicação com o display 20x4 </span>
+
+<span style="color: #557799">#define col 16     </span><span style="color: #888888">// Serve para definir o numero de colunas do display utilizado</span>
+<span style="color: #557799">#define lin  2     </span><span style="color: #888888">// Serve para definir o numero de linhas do display utilizado</span>
+<span style="color: #557799">#define ende  0x27 </span><span style="color: #888888">// Serve para definir o endereço do display.</span>
+
+LiquidCrystal_I2C <span style="color: #0066BB; font-weight: bold">lcd</span>(ende,col,lin); <span style="color: #888888">// Chamada da funcação LiquidCrystal para ser usada com o I2C</span>
+
+<span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() <span style="color: #888888">//Incia o display</span>
+{  
+    lcd.init();      <span style="color: #888888">// Serve para iniciar a comunicação com o display já conectado</span>
+    lcd.backlight(); <span style="color: #888888">// Serve para ligar a luz do display</span>
+    lcd.clear();     <span style="color: #888888">// Serve para limpar a tela do display</span>
+}
+<span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() 
+{
+    lcd.setCursor(<span style="color: #3fec87; font-weight: bold">2</span>,<span style="color: #3fec87; font-weight: bold">0</span>);         <span style="color: #888888">// Coloca o cursor do display na coluna 2 e linha 0</span>
+    lcd.print(<span style="color: #fd8b19">&quot;Quer aprender&quot;</span>); <span style="color: #888888">// Comando de saída com a mensagem que deve aparecer na coluna 2 e linha 0.</span>
+    lcd.setCursor(<span style="color: #3fec87; font-weight: bold">4</span>,<span style="color: #3fec87; font-weight: bold">1</span>);         <span style="color: #888888">//Coloca o cursor do display na coluna 4 e linha 1</span>
+    lcd.print(<span style="color: #fd8b19">&quot;Arduino?&quot;</span>);      <span style="color: #888888">// Comando de saida com a mensagem que deve aparecer na coluna 4 e linha 1</span>
+    delay(<span style="color: #3fec87; font-weight: bold">5000</span>);                <span style="color: #888888">// delay de 5 segundos com todas as mensagens na tela</span>
+    lcd.clear();                <span style="color: #888888">// Limpa o display até o loop ser reiniciado</span>
+    lcd.setCursor(<span style="color: #3fec87; font-weight: bold">4</span>,<span style="color: #3fec87; font-weight: bold">0</span>);         <span style="color: #888888">// Coloca o cursor do display na coluna 4 e linha 0</span>
+    lcd.print(<span style="color: #fd8b19">&quot;PCB AL-1 &quot;</span>);     <span style="color: #888888">// Comando de saída com a mensagem que deve aparecer na coluna 4 e linha 0.</span>
+    lcd.setCursor(<span style="color: #3fec87; font-weight: bold">2</span>,<span style="color: #3fec87; font-weight: bold">1</span>);         <span style="color: #888888">//Coloca o cursor do display na coluna 2 e linha 1</span>
+    lcd.print(<span style="color: #fd8b19">&quot;Plug &amp; Play &quot;</span>);  <span style="color: #888888">// Comando de saida com a mensagem que deve aparecer na coluna 2 e linha 1</span>
+    delay(<span style="color: #3fec87; font-weight: bold">5000</span>);                <span style="color: #888888">// delay de 5 segundos com todas as mensagens na tela</span>
+    lcd.clear();                <span style="color: #888888">// Limpa o display até o loop ser reiniciado</span>
+}
+                                </pre></div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Última atualização 12/04/2023</small>
+                            </div>
+                        </div>
+                    </div>
+<!-------------------------------------------------- End Codes ---------------------------------------------------------------->
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy;ALPCIS - 2023</p></div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
