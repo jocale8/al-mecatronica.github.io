@@ -133,7 +133,7 @@
                                 <!-- Codigo -->     
                                 <div class="text-white"><pre style="margin: 0; line-height: 125%">
 <span style="color: #557799">#include </span><span style="color: #888888">//INCLUSÃO DA BIBLIOTECA NECESSÁRIA</span>
-<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> pinoServo <span style="color: #333333">=</span> <span style="color: #3fec87; font-weight: bold">10</span>; <span style="color: #888888">//PINO DIGITAL UTILIZADO PELO SERVO  </span>
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> pinoServo <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">10</span>; <span style="color: #888888">//PINO DIGITAL UTILIZADO PELO SERVO  </span>
     
 Servo s; <span style="color: #888888">//OBJETO DO TIPO SERVO</span>
 <span style="color: #f9666b; font-weight: bold">int</span> pos; <span style="color: #888888">//POSIÇÃO DO SERVO</span>
@@ -143,12 +143,12 @@ Servo s; <span style="color: #888888">//OBJETO DO TIPO SERVO</span>
     s.write(<span style="color: #3fec87; font-weight: bold">0</span>); <span style="color: #888888">//INICIA O MOTOR NA POSIÇÃO 0º</span>
 }
 <span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>(){
-    <span style="color: #008800; font-weight: bold">for</span>(pos <span style="color: #333333">=</span> <span style="color: #3fec87; font-weight: bold">0</span>; pos <span style="color: #333333">&lt;</span> <span style="color: #3fec87; font-weight: bold">120</span>; pos<span style="color: #333333">++</span>){ <span style="color: #888888">//PARA &quot;pos&quot; IGUAL A 0, ENQUANTO &quot;pos&quot; MENOR QUE 120, INCREMENTA &quot;pos&quot;</span>
+    <span style="color: #008800; font-weight: bold">for</span>(pos <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">0</span>; pos <span style="color: #ffffff">&lt;</span> <span style="color: #3fec87; font-weight: bold">120</span>; pos<span style="color: #ffffff">++</span>){ <span style="color: #888888">//PARA &quot;pos&quot; IGUAL A 0, ENQUANTO &quot;pos&quot; MENOR QUE 120, INCREMENTA &quot;pos&quot;</span>
     s.write(pos); <span style="color: #888888">//ESCREVE O VALOR DA POSIÇÃO QUE O SERVO DEVE GIRAR</span>
     delay(<span style="color: #3fec87; font-weight: bold">15</span>); <span style="color: #888888">//INTERVALO DE 15 MILISSEGUNDOS</span>
     }
     delay(<span style="color: #3fec87; font-weight: bold">1000</span>); <span style="color: #888888">//INTERVALO DE 1 SEGUNDO</span>
-    <span style="color: #008800; font-weight: bold">for</span>(pos <span style="color: #333333">=</span> <span style="color: #3fec87; font-weight: bold">120</span>; pos <span style="color: #333333">&gt;=</span> <span style="color: #3fec87; font-weight: bold">0</span>; pos<span style="color: #333333">--</span>){ <span style="color: #888888">//PARA &quot;pos&quot; IGUAL A 120, ENQUANTO &quot;pos&quot; MAIOR OU IGUAL QUE 0, DECREMENTA &quot;pos&quot;</span>
+    <span style="color: #008800; font-weight: bold">for</span>(pos <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">120</span>; pos <span style="color: #ffffff">&gt;=</span> <span style="color: #3fec87; font-weight: bold">0</span>; pos<span style="color: #ffffff">--</span>){ <span style="color: #888888">//PARA &quot;pos&quot; IGUAL A 120, ENQUANTO &quot;pos&quot; MAIOR OU IGUAL QUE 0, DECREMENTA &quot;pos&quot;</span>
     s.write(pos); <span style="color: #888888">//ESCREVE O VALOR DA POSIÇÃO QUE O SERVO DEVE GIRAR</span>
     delay(<span style="color: #3fec87; font-weight: bold">15</span>); <span style="color: #888888">//INTERVALO DE 15 MILISSEGUNDOS</span>
     }
@@ -212,8 +212,8 @@ LiquidCrystal_I2C <span style="color: #0066BB; font-weight: bold">lcd</span>(end
                                 <!-- Codigo -->     
                                 <div class="text-white"><pre style="margin: 0; line-height: 125%">
 <span style="color: #888888">// defines pins numbers</span>
-<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> trigPin <span style="color: #333333">=</span> <span style="color: #3fec87; font-weight: bold">5</span>;
-<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> echoPin <span style="color: #333333">=</span> <span style="color: #3fec87; font-weight: bold">4</span>;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> trigPin <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">5</span>;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> echoPin <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">4</span>;
 <span style="color: #888888">// defines variables</span>
 <span style="color: #f9666b; font-weight: bold">long</span> duration;
 <span style="color: #f9666b; font-weight: bold">float</span> distance;
@@ -231,9 +231,9 @@ LiquidCrystal_I2C <span style="color: #0066BB; font-weight: bold">lcd</span>(end
     delayMicroseconds(<span style="color: #3fec87; font-weight: bold">10</span>);
     digitalWrite(trigPin, LOW);
     <span style="color: #888888">// Reads the echoPin, returns the sound wave travel time in microseconds</span>
-    duration <span style="color: #333333">=</span> pulseIn(echoPin, HIGH);
+    duration <span style="color: #ffffff">=</span> pulseIn(echoPin, HIGH);
     <span style="color: #888888">// Calculating the distance</span>
-    distance <span style="color: #333333">=</span> duration <span style="color: #333333">*</span> <span style="color: #6600EE; font-weight: bold">0.034</span> <span style="color: #333333">/</span> <span style="color: #3fec87; font-weight: bold">2</span>;
+    distance <span style="color: #ffffff">=</span> duration <span style="color: #ffffff">*</span> <span style="color: #6600EE; font-weight: bold">0.034</span> <span style="color: #ffffff">/</span> <span style="color: #3fec87; font-weight: bold">2</span>;
     <span style="color: #888888">// Prints the distance on the Serial Monitor</span>
     Serial.print(<span style="color: #fd8b19">&quot;Distance: &quot;</span>);
     Serial.print(distance, <span style="color: #3fec87; font-weight: bold">2</span>);
@@ -283,8 +283,8 @@ byte umidade;
 }
 <span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() 
 {
-    umidade <span style="color: #333333">=</span> dht.readHumidity();
-    temperatura <span style="color: #333333">=</span> dht.readTemperature();
+    umidade <span style="color: #ffffff">=</span> dht.readHumidity();
+    temperatura <span style="color: #ffffff">=</span> dht.readTemperature();
     
     lcd.setCursor(<span style="color: #3fec87; font-weight: bold">0</span>,<span style="color: #3fec87; font-weight: bold">0</span>); <span style="color: #888888">// Coloca o cursor do display na coluna 0 e linha 0</span>
     lcd.print(<span style="color: #fd8b19">&quot;Temp: &quot;</span>); <span style="color: #888888">// Comando de saída com a mensagem que deve aparecer na coluna 0 e linha 0.</span>
@@ -316,11 +316,11 @@ byte umidade;
                                 <!-- Codigo -->     
                                 <div class="text-white"><pre style="margin: 0; line-height: 125%">
 <span style="color: #888888">// Define pin connections &amp; motor&#39;s steps per revolution</span>
-<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> dirPin <span style="color: #333333">=</span> A0;
-<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> stepPin <span style="color: #333333">=</span> A1;
-<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> slpPin <span style="color: #333333">=</span> A2;
-<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> rstPin <span style="color: #333333">=</span> A3;
-<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> stepsPerRevolution <span style="color: #333333">=</span> <span style="color: #3fec87; font-weight: bold">200</span>;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> dirPin <span style="color: #ffffff">=</span> A0;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> stepPin <span style="color: #ffffff">=</span> A1;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> slpPin <span style="color: #ffffff">=</span> A2;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> rstPin <span style="color: #ffffff">=</span> A3;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> stepsPerRevolution <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">200</span>;
 
 <span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>()
 {
@@ -339,7 +339,7 @@ byte umidade;
     digitalWrite(dirPin, HIGH);
 
     <span style="color: #888888">// Spin motor slowly</span>
-    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #f9666b; font-weight: bold">int</span> x <span style="color: #333333">=</span> <span style="color: #3fec87; font-weight: bold">0</span>; x <span style="color: #333333">&lt;</span> stepsPerRevolution; x<span style="color: #333333">++</span>)
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #f9666b; font-weight: bold">int</span> x <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">0</span>; x <span style="color: #ffffff">&lt;</span> stepsPerRevolution; x<span style="color: #ffffff">++</span>)
     {
     digitalWrite(stepPin, HIGH);
     delayMicroseconds(<span style="color: #3fec87; font-weight: bold">2000</span>);
@@ -352,7 +352,7 @@ byte umidade;
     digitalWrite(dirPin, LOW);
 
     <span style="color: #888888">// Spin motor quickly</span>
-    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #f9666b; font-weight: bold">int</span> x <span style="color: #333333">=</span> <span style="color: #3fec87; font-weight: bold">0</span>; x <span style="color: #333333">&lt;</span> stepsPerRevolution; x<span style="color: #333333">++</span>)
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #f9666b; font-weight: bold">int</span> x <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">0</span>; x <span style="color: #ffffff">&lt;</span> stepsPerRevolution; x<span style="color: #ffffff">++</span>)
     {
     digitalWrite(stepPin, HIGH);
     delayMicroseconds(<span style="color: #3fec87; font-weight: bold">1000</span>);
@@ -392,10 +392,10 @@ byte umidade;
     digitalWrite(TxRxPin, LOW);        <span style="color: #888888">// RS485 como receptor</span>
     digitalWrite(LedPin, HIGH);        <span style="color: #888888">// Led indica que estara aguardando uma resposta</span>
     
-    <span style="color: #008800; font-weight: bold">while</span>(Serial.available() <span style="color: #333333">==</span> <span style="color: #3fec87; font-weight: bold">0</span>){}   <span style="color: #888888">// Espera por algum dado disponivel</span>
+    <span style="color: #008800; font-weight: bold">while</span>(Serial.available() <span style="color: #ffffff">==</span> <span style="color: #3fec87; font-weight: bold">0</span>){}   <span style="color: #888888">// Espera por algum dado disponivel</span>
     
     digitalWrite(LedPin, LOW);         <span style="color: #888888">// Led desliga indicando que chegou uma mensagem</span>
-    String text <span style="color: #333333">=</span> Serial.readString(); <span style="color: #888888">// Lê até o timeout</span>
+    String text <span style="color: #ffffff">=</span> Serial.readString(); <span style="color: #888888">// Lê até o timeout</span>
     text.trim();                       <span style="color: #888888">// Remove \r \n whitespace do final do string  </span>
     Serial.print(<span style="color: #fd8b19">&quot;&lt;-- &quot;</span>);
     Serial.println(text);

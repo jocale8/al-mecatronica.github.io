@@ -72,17 +72,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5"></div>
-                    <p class="lead">O Módulo Relé é ideal para acionar uma lâmpada ou outra carga que exija até no máximo 10A contínuos utilizando o Arduino ou qualquer outro microcontrolador.</p>
-                    <p class="lead">O controle do relé é feito pela porta 7 do Nano. A porta é definidas como saídas e alterna o estados HIGH e LOW, sendo que o estado alto (HIGH), é que aciona o relé. É possivel acompanhar o acionamento do rele tanto pelo só carateristico, como pelo led que fica do lado ao mesmo.</p>
+                    <div class="container">
+                        <br>
+                        <p class="lead" align="justify">O Módulo Relé é ideal para acionar uma lâmpada ou outra carga que exija até no máximo 10A contínuos utilizando o Arduino ou qualquer outro microcontrolador.</p>
+                        <p class="lead" align="justify">O controle do relé é feito pela porta 7 do Nano. A porta é definidas como saídas e alterna o estados HIGH e LOW, sendo que o estado alto (HIGH), é que aciona o relé. É possivel acompanhar o acionamento do rele tanto pelo só carateristico, como pelo led que fica do lado ao mesmo.</p>
+                        <p class="lead"><strong>Exemplo de montagem com a rede AC para desligar e ligar uma lâmpada:</strong></p>
+                    </div>
                     <div class="container">
                         <div class="row justify-content-md-center">
-                            <div class="col-md-6 px-0">
+                            <div class="col-md-7 px-0">
                                 <img src="assets/image/Example_rele.jpg" class="img-fluid">
                             </div>
                         </div>
+                        <br>
                     </div>
-                    <p></p>
                     <div class="col mb-5">
                         <div class="alert alert-warning d-flex align-items-center" role="alert">
                             <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -91,7 +94,7 @@
                                 </symbol>
                             </svg>
                             <svg class="bi img-fluid me-2" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-                            <div>
+                            <div align="justify">
                                 ATENÇÃO:
                                 Caso você não tenha conhecimento adequado para mexer na rede elétrica, peça auxilio a um profissional. A ALPCIS não se responsabiliza por danos à rede elétrica e/ou à integridade física do praticante do experimento, bem como quaisquer pessoas que possam vir a ser lesadas.
                             </div>
@@ -107,23 +110,21 @@
                             <div class="card-body bg-dark">
                                 <!-- Codigo -->     
                                 <div class="text-white"><pre style="margin: 0; line-height: 125%">
-<span style="color: #888888">// the setup function runs once when you press reset or power the board</span>
 <span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() {
-    <span style="color: #888888">// initialize digital pin 7 as an output.</span>
-    pinMode(<span style="color: #3fec87; font-weight: bold">7</span>, OUTPUT);      <span style="color: #888888">// Relay is instaled on pin 7 </span>
+    <span style="color: #888888">// Inicializa o pino digital 7 como uma saída, elé esta relacionado ao acionamento do relé</span>
+    pinMode(<span style="color: #3fec87; font-weight: bold">7</span>, OUTPUT);
 }
 
-<span style="color: #888888">// the loop function runs over and over again forever</span>
 <span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() {
-    digitalWrite(<span style="color: #3fec87; font-weight: bold">7</span>, HIGH);   <span style="color: #888888">// turn the Relay on (HIGH is the voltage level)</span>
-    delay(<span style="color: #3fec87; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
-    digitalWrite(<span style="color: #3fec87; font-weight: bold">7</span>, LOW);    <span style="color: #888888">// turn the Relay off by making the voltage LOW</span>
-    delay(<span style="color: #3fec87; font-weight: bold">1000</span>);             <span style="color: #888888">// wait for a second</span>
+    digitalWrite(<span style="color: #3fec87; font-weight: bold">7</span>, HIGH);   <span style="color: #888888">// Aciona o Relé</span>
+    delay(<span style="color: #3fec87; font-weight: bold">1000</span>);             <span style="color: #888888">// Aguarda 1 segundo</span>
+    digitalWrite(<span style="color: #3fec87; font-weight: bold">7</span>, LOW);    <span style="color: #888888">// Desenergiza o Relé</span>
+    delay(<span style="color: #3fec87; font-weight: bold">1000</span>);             <span style="color: #888888">// Aguarda 1 segundo</span>
 }
                                 </pre></div>
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary">Last updated 06/04/2023</small>
+                                <small class="text-body-secondary">Last updated 13/04/2023</small>
                             </div>
                         </div>
                     </div>
