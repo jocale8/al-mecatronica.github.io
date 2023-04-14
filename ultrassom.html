@@ -5,25 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>ALPCIS - Sobre nós</title>
+        <title>ALPCIS - Exemplos</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/AL-logo.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/styles2.css" rel="stylesheet" />
-        
     </head>
     <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg3.mp4" type="video/mp4" /></video> 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
@@ -32,10 +22,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Loja</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Loja</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Sobre nós</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exemplos</a>
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exemplos</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="blink.html">Blink</a></li>
                                 <li><a class="dropdown-item" href="relay.html">Relé</a></li>
@@ -62,22 +52,103 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">Coming Soon</h1>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Ultrassom HC-SR04</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">A comunicação I2C simplifica a comunicação entre dispositivos</p>
                 </div>
             </div>
-        </div>
-        <!-- Social Icons-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-md-1 row-cols-xl-1 justify-content-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-5 px-0">
+                                <img src="assets/image/ultrassom_white.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="lead" align="justify">O Sensor Ultrassônico HC-SR04 é um componente muito comum em projetos com Arduino, e permite que você faça leituras de distâncias entre 2 cm e 4 metros, com precisão de 3 mm. Pode ser utilizado simplesmente para medir a distância entre o sensor e um objeto, como para acionar portas do microcontrolador, desviar um robô de obstáculos, acionar alarmes, etc. Neste tutorial ensinaremos a conectar o HC-SR04 ao Arduino.</p>
+                        <p class="lead" align="justify">O funcionamento do HC-SR04 se baseia no envio de sinais ultrassônicos pelo sensor, que aguarda o retorno (echo) do sinal, e com base no tempo entre envio e retorno, calcula a distância entre o sensor e o objeto detectado.</p>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-6 px-0">
+                                <img src="assets/image/Ultrassom_funcionamento.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <p class="lead" align="justify">Primeiramente é enviado um pulso de 10µs, indicando o início da transmissão de dados. Depois disso, são enviado 8 pulsos de 40 KHz e o sensor então aguarda o retorno (em nível alto/high), para determinar a distância entre o sensor e o objeto, utilizando a equação <strong>Distância = (Tempo echo em nível alto * velocidade do som) /2</strong></p>
+                    </div>
+                    <p></p>
+<!-------------------------------------------------- Start Codes ---------------------------------------------------------------->
+                    <div class="col mb-5">
+                        <!-- Product name-->
+                        <div class="card h-100">
+                            <div class="card-header">
+                                HC-SR04 Serial
+                            </div>
+                            <div class="card-body bg-dark">
+                                <!-- Codigo -->     
+                                <div class="text-white"><pre style="margin: 0; line-height: 125%">
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> trigPin <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">5</span>;
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #f9666b; font-weight: bold">int</span> echoPin <span style="color: #ffffff">=</span> <span style="color: #3fec87; font-weight: bold">4</span>;
+
+<span style="color: #f9666b; font-weight: bold">long</span> duration;
+<span style="color: #f9666b; font-weight: bold">float</span> distance;
+
+<span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">setup</span>() {
+    pinMode(trigPin, OUTPUT); <span style="color: #888888">// Sets the trigPin as an Output</span>
+    pinMode(echoPin, INPUT);  <span style="color: #888888">// Sets the echoPin as an Input</span>
+    Serial.begin(<span style="color: #3fec87; font-weight: bold">9600</span>);       <span style="color: #888888">// Starts the serial communication</span>
+}
+<span style="color: #f9666b; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">loop</span>() {
+    digitalWrite(trigPin, LOW); <span style="color: #888888"> // Clears the trigPin</span>
+    delayMicroseconds(<span style="color: #3fec87; font-weight: bold">2</span>);
+    digitalWrite(trigPin, HIGH); <span style="color: #888888">// Sets the trigPin on HIGH state for 10 micro seconds</span>
+    delayMicroseconds(<span style="color: #3fec87; font-weight: bold">10</span>);
+    digitalWrite(trigPin, LOW);
+    
+    duration <span style="color: #ffffff">=</span> pulseIn(echoPin, HIGH); <span style="color: #888888">// Reads the echoPin, returns the sound wave travel time in microseconds</span>
+    distance <span style="color: #ffffff">=</span> duration <span style="color: #ffffff">*</span> <span style="color: #6600EE; font-weight: bold">0.034</span> <span style="color: #ffffff">/</span> <span style="color: #3fec87; font-weight: bold">2</span>; <span style="color: #888888">  // Calculating the distance</span>
+    
+    Serial.print(<span style="color: #fd8b19">&quot;Distance: &quot;</span>); <span style="color: #888888">       // Prints the distance on the Serial Monitor</span>
+    Serial.print(distance, <span style="color: #3fec87; font-weight: bold">2</span>);
+    Serial.println(<span style="color: #fd8b19">&quot; cm&quot;</span>);
+    delay(<span style="color: #3fec87; font-weight: bold">1000</span>);
+}
+                                </pre></div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Última atualização 4/04/2023</small>
+                            </div>
+                        </div>
+                    </div>
+<!-------------------------------------------------- End Codes ---------------------------------------------------------------->
+                    <div class="container">
+                        <p class="lead">Os dados são mostrados no serial monitor:</p>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-8 px-0">
+                                <img src="assets/image/Ultrassom_Serial.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy;ALPCIS - 2023</p></div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
