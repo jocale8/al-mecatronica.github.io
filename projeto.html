@@ -36,8 +36,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projeto.html">O projeto</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="projeto.html">O projeto</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Sobre nós</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exemplos</a>
@@ -71,73 +71,72 @@
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Eletrônica, projetos, componentes e PCB</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Vá sempre além do que é esperado</p>
+                    <h1 class="display-4 fw-bolder">Aprender a programar pode se tornar fácil</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Esses projetos podem ter usos profissionais</p>
                 </div>
             </div>
         </header>
         <!-- Section-->
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex ms-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper text-white-50">Prototipos, testes e desenvolvimento</span>
-                                <span class="section-heading-lower text-white">Projeto PCB AL-1</span>
-                            </h2>
+        <section class="py-1">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-md-1 row-cols-xl-1 justify-content-center">
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                            <div class="col-5">
+                                <div class="container">
+                                    <img src="assets/image/AL-1_sem_fundo.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="container">
+                                    <img src="assets/image/AL-2_sem_fundo.png" class="img-fluid">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-1_S.jpg" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded text-white" align="justify"><p class="mb-0">O PCB AL-1 consiste numa placa de circuito impresso que expande o potencial do famoso Arduino Nano Atmega328p permitindo o uso rápido e eficiente de diversor modulos de desenvolvimento muito utilizados em projetos de eletrônica educacional e proficional. Facilita o controle de diversos tipos de atuadores, leitura de sensores digitais e analógicos, comunicação serial e muito mais. O sistema possui um completo sistema para baterias de litio 18650 que permite carregamento por energia solar (6V/1A), podendo ter um instrumento independente e portatil para testes de campo.</p></div>
+                    <div class="container">
+                        <p class="lead" align="justify">As PCBs AL-1, AL-2 e AL-0 são um desenvolvimento com intuito educativo, prático e profissional. Elas dispensam a necesidade de ter conhecimentos em eletrônica para aprender a criar projetos utilizando o famoso hardware Arduino.</p>
+                        <p class="lead" align="justify">A raiz da aparição do Arduino, foram desenvilvidos centenas de modulos com milhares de usos que qualquer pessoa pode utilizar. Por exemplo displays, sensores, atuadores, interfases, entre outros. As PCB AL visam facilitar a integração com varios dos principais modulos comerciais para tornar ideias em realidade de forma rápida e segura.</p>
+                    </div>
+                    <div class="container">
+                        <p class="lead"><strong>Modulos que podem ser utilizados:</strong></p>
+                        <ul class="lead">
+                            <li>Display OLED 128x64 Px - 0.96" - 4 Pin - I2C</li>
+                            <li>Display LCD 16x2 com I2C</li>
+                            <li>Sensor DHT11 de Temperatura e Umidade</li>
+                            <li>Real Time Clock RTC DS3231</li>
+                            <li>Módulo Micro SD Card SPI</li>
+                            <li>Conversor Analógico Digital 4 canais ADS1115 de 16 Bits</li>
+                            <li>Módulo Sensor de Distância Ultrassônico HC-SR04</li>
+                            <li>Módulo GPS NEO-6M com Antena</li>
+                            <li>Módulo Conversor de Dados TTL para RS485 - CDT11</li>
+                            <li>Acelerômetro e Giroscópio 3 Eixos 6 DOF MPU-6050</li>
+                            <li>Driver para Motor de passo DRV8825</li>
+                            <li>Micro Servo 9g SG90 TowerPro</li>
+                            <li>Módulo WiFi ESP8266 ESP-01 ou ESP-01S</li>
+                        </ul>
+                    </div> 
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-8 px-0">
+                                <img src="assets/image/Todos_Modulos.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="lead" align="justify">Além dos modulos, a placa possui um Rele que permite a interação com a rede eletrica AC para projetos de Automação, IoT ou Robôtica, como por exemplo ligar e desligar uma lâmpada, uma bomba, uma alarme, ou energizar um contator para cargas maiores a 10A.</p>
+                        <p class="lead" align="justify">Os modelos AL-1 e AL-2 possuim um sistema completo para baterias de litio 18650 que permita a recarga segura via USB ou energia solar (6V 1A). A eletronica embarcada pode alimetar o arduino junto com os modulos por varias horas a depender do consumo.Já foi testado um Oled junto com o DHT funcionando por mais de 12 horas medindo temperatura e umidade sem fonte externa. Tambem o dois reguladores AMS1117 de 5V e 3.3V de 800mA fornecem energia suficiente para todos os modulos, incluindo o ESP-01 e o GPS que são grandes consumidores de energia a 3.3V.</p>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-10 px-0">
+                                <img src="assets/image/Sistema_alimentacao.png" class="img-fluid">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex me-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper text-white-50">Treinamento, teste e desenvolvimeto na superfície</span>
-                                <span class="section-heading-lower text-white">Projeto PCB AL-2</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-2_S.jpg" alt="..." />
-                    <div class="product-item-description d-flex ms-auto">
-                        <div class="bg-faded p-5 rounded text-white" align="justify"><p class="mb-0">O PCB AL-2 consiste numa placa de circuito impresso que expande o potencial do famoso Arduino Nano Atmega328p com as mesmas ferramentas que o predecessor AL-1. Possui o mesmo sistema para carregamento, controle e proteção de bateria de litio, todo no TOP da placa para facil acesso. Foi projetada com intuito mais educacional entretanto não diminui o potencial para prototipos proficionais.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex ms-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper">From Around the World</span>
-                                <span class="section-heading-lower">Bulk Speciality Blends</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-B_V1.0_Red_preview_rev_1.png" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-
-
-
-
-
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
