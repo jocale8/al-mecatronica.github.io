@@ -10,11 +10,12 @@
         <link rel="icon" type="image/x-icon" href="assets/AL-logo.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/styles3.css" rel="stylesheet" />
+        <link href="css/styles4.css" rel="stylesheet" />
 
-        <!-- Hotjar Tracking Code for https://alpcis.com.br/ -->
+        <!-- Hotjar Tracking Code for https://alpcis.com.br/ 
         <script>
             (function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -24,15 +25,15 @@
                 r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
+        </script>-->
 
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <div class="container px-4 px-lg-5">
                 <img src="assets/AL-logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                <a class="navbar-brand" href="index.html">ALPCIS</a>
+                <a class="navbar-brand" href="index.html">&nbsp;ALPCIS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -55,158 +56,265 @@
                             </ul>
                         </li>
                     </ul>
-                    <!--
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
-                    -->
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Eletrônica, projetos, componentes e PCB</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Vá sempre além do que é esperado</p>
-                </div>
-            </div>
-        </header>
-
-        <!-- Section AL-2 -->
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex me-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper text-white-50">Simplicidade, educação e IoT</span>
-                                <span class="section-heading-lower text-white">Projeto PCB AL-0</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-0.JPG" alt="..." />
-                    <div class="product-item-description d-flex ms-auto">
-                        <div class="bg-faded p-5 rounded text-white" align="justify"><p class="mb-0">A PCB AL-0 consiste numa placa de circuito impresso que expande o potencial do famoso Arduino Nano Atmega328p permitindo o uso rápido e eficiente de diversos módulos de desenvolvimento muito utilizados em projetos de eletrônica educacional e profissional. Facilita o controle de diversos tipos de atuadores, leitura de sensores digitais e analógicos, comunicação serial e muito mais.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Section Al-2 -->
         
+        <!-- Carrousel -->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/image/carrousel/slide3.jpg" class="d-block w-100" height="400" alt="...">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Eletrônica, projetos, componentes e PCB</h1>
+                            <p class="opacity-75">Vá sempre além do que é esperado</p>
+                            <!--<p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/image/carrousel/slide5.jpg" class="d-block w-100" height="400" alt="...">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Uma iniciativa para apoiar trabalhos de pesquisa e inovação</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-sm btn-primary" href="about.html">Confira aqui</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/image/carrousel/slide2.jpg" class="d-block w-100" height="400" alt="...">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Aprender a programar pode se tornar fácil</h1>
+                            <p>Esses projetos podem ter usos profissionais.</p>
+                            <p><a class="btn btn-sm btn-primary" href="projeto.html">Aprenda mais</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Album de fotos-->
+        <main>
         
-        <!-- Section AL-1 -->
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex ms-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper text-white-50">Prototipos, testes e desenvolvimento</span>
-                                <span class="section-heading-lower text-white">Projeto PCB AL-1</span>
-                            </h2>
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="assets/image/produtos/AL-0_sem_fundo.png" class="img-thumbnail" alt="...">
+                                <div class="card-body" align="justify">
+                                    <p class="card-text"><strong>AL-0</strong></p>
+                                    <p class="card-text">Expande o potencial do famoso Arduino Nano Atmega328p permitindo o uso rápido e eficiente de diversos módulos de desenvolvimento utilizados em projetos de eletrônica educacional e profissional. Facilita o controle de diversos tipos de atuadores, leitura de sensores, comunicação serial e muito mais.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!--<div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="assets/image/produtos/AL-1_sem_fundo.png" class="img-thumbnail" alt="...">
+                                <div class="card-body" align="justify">
+                                    <p class="card-text"><strong>AL-1</strong></p>
+                                    <p class="card-text">Possui todas as carateristicas de conexão com módulos da PCB AL-0 adicionando um completo sistema para baterias de lítio 18650 que permite carregamento por energia solar (6V/1A), podendo ter um instrumento independente e portátil para testes de campo.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!--<div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            <img src="assets/image/produtos/AL-2_sem_fundo.png" class="img-thumbnail" alt="...">
+                                <div class="card-body" align="justify">
+                                    <p class="card-text"><strong>AL-2</strong></p>
+                                    <p class="card-text">Possui as mesmas ferramentas do predecessor AL-1 com o mesmo sistema para carregamento, controle e proteção de bateria de lítio, todo no TOP da placa para fácil acesso. Foi projetada com intuito mais educacional entretanto não diminui o potencial para protótipos profissionais.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!--<div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="assets/image/produtos/AL-B_sem_fundo.png" class="img-thumbnail" alt="...">
+                                <div class="card-body" align="justify">
+                                    <p class="card-text"><strong>AL-B</strong></p>
+                                    <p class="card-text">É módulo carregador para 1 Bateria de lítio 18650 com saídas de 7-12V ajustável, 5V e 3.3V, até 1A, ideal para Arduino, ESP, Nodemcu, STM32, entre outras plataformas. O carregamento da bateria é feito via micro USB ou via energia solar utilizando um painel de 6V 1A.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!--<div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="assets/image/produtos/AL-32_sem_fundo.png" class="img-thumbnail" alt="...">
+                                <div class="card-body" align="justify">
+                                    <p class="card-text"><strong>AL-32</strong></p>
+                                    <p class="card-text">Utiliza o microcontrolador STM32F103C8t6 de 12bits e foi desenvolvida com objetivo educativo para jovens e adultos, que permite explorar a programação num nível novo e profissional. Com um processador ARM Cortex-M3 e uma frequência de até 72 MHz, ele é um microcontrolador bem potente.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!--<div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="assets/image/produtos/PlacasPCIs.JPG" class="img-thumbnail" alt="...">
+                                <div class="card-body" align="justify">
+                                    <p class="card-text"><strong>PCBs 1-2 Layers</strong></p>
+                                    <p class="card-text">Participamos no processo de desenho e desenvolvimento das placas personalizadas para projetos específicos. Realizamos o pedido a empresas no exterior para fabricar a quantidade de placas desejadas sem acrescentar custos por baixas produções. (min. 5).</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!--<div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-1_S.jpg" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded text-white" align="justify"><p class="mb-0">A PCB AL-1 consiste numa placa de circuito impresso que possui todas as carateristicas do AL-0 adicionando um completo sistema para baterias de lítio 18650 que permite carregamento por energia solar (6V/1A), podendo ter um instrumento independente e portátil para testes de campo.</p></div>
+                </div>
+            </div>
+        
+        </main>   
+        <!-- end Album de fotos-->
+
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Serviços</h2>
+                    <h3 class="section-subheading text-muted">Voltados a projetos de Placas de Circuito Impresso PCB.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/image/servicos/PCB-Design.png" alt="" height="124px" width="124px">
+                            <!--
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            -->
+                        </span>
+                        <h4 class="my-3">PCB Design</h4>
+                        <p class="text-muted">Participamos no processo de desenho e desenvolvimento das placas personalizadas para projetos específicos.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/image/servicos/PCB-Manufacturing.png" alt="" height="124px" width="124px">
+                            <!--
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            -->
+                        </span>
+                        <h4 class="my-3">PCB Manufacturing</h4>
+                        <p class="text-muted">Realizamos o pedido a empresas no exterior para fabricar a quantidade de placas desejadas sem acrescentar custos por baixas produções. (min. 5)</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/image/servicos/PCB-Assembly.png" alt="" height="124px" width="124px">
+                            <!--
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                            -->
+                        </span>
+                        <h4 class="my-3">PCB Assembly</h4>
+                        <p class="text-muted">Dominamos as técnicas de ensamblagens que empresas no exterior fornecem para montagem das placas de forma automatizada e a baixo custo.</p>
+                    </div>
+                </div>
+            </div>      
+        </section>
+        <!-- Tipos de PCBs -->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Tipos de PCB</h2>
+                    <h3 class="section-subheading text-muted">Voltados a projetos de Placas de Circuito Impresso PCB.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/image/tiposPCBs/singlePCBFR-4.png" alt="" height="124px" width="124px">
+                            <!--
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            -->
+                        </span>
+                        <h4 class="my-3">1-2 Layers PCBs</h4>
+                        <p class="text-muted">O PCB de 2 camadas (PCB de dupla face) é uma placa de circuito impresso com revestimento de cobre em ambos os lados, superior e inferior. Há uma camada isolante no meio, que é uma placa de circuito impresso comumente usada. Ambos os lados podem ser dispostos e soldados, o que reduz muito a dificuldade do layout, por isso é amplamente utilizado.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/image/tiposPCBs/flexPCB.png" alt="" height="124px" width="124px">
+                            <!--
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            -->
+                        </span>
+                        <h4 class="my-3">Flex PCBs</h4>
+                        <p class="text-muted">O FPC (circuito impresso flexível), com alta confiabilidade e excelente flexibilidade mecânica, aguardando a solução de mais necessidades de projeto dos engenheiros.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/image/tiposPCBs/aluminumPCB.png" alt="" height="124px" width="124px">
+                            <!--
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                            -->
+                        </span>
+                        <h4 class="my-3">Aluminum PCBs</h4>
+                        <p class="text-muted">As placas de alumínio têm melhor dissipação de calor e transferência térmica do que as construções FR-4 padrão. PCBs com suporte de alumínio são usados com mais frequência para aplicações de LED, fontes de alimentação, circuitos de alta corrente, controladores de motor e aplicações automotivas.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Section Al-1 -->
-
-        <!-- Section AL-2 -->
-        <section class="page-section">
+        <!-- Clients-->
+        <div class="py-5">
             <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex me-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper text-white-50">Treinamento, teste e desenvolvimeto na superfície</span>
-                                <span class="section-heading-lower text-white">Projeto PCB AL-2</span>
-                            </h2>
-                        </div>
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://www.ufba.br/"><img class="img-fluid img-brand d-block mx-auto" src="assets/image/clientes/UFBA.png" alt="..." /></a>
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-2_S.jpg" alt="..." />
-                    <div class="product-item-description d-flex ms-auto">
-                        <div class="bg-faded p-5 rounded text-white" align="justify"><p class="mb-0">A PCB AL-2 possui as mesmas ferramentas que o predecessor AL-1 com o mesmo sistema para carregamento, controle e proteção de bateria de lítio, todo no TOP da placa para fácil acesso. Foi projetada com intuito mais educacional entretanto não diminui o potencial para protótipos profissionais.</p></div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://portal.ifba.edu.br/"><img class="img-fluid img-brand d-block mx-auto" src="assets/image/clientes/IFBA.png" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://www.fapex.org.br/"><img class="img-fluid img-brand d-block mx-auto" src="assets/image/clientes/FAPEX.png" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://www.fepba.org.br/"><img class="img-fluid img-brand d-block mx-auto" src="assets/image/clientes/FEP.png" alt="..." /></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End Section Al-2 -->
-
-        <!-- Section AL-B -->
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex ms-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper text-white-50">Para alimentar o seus projetos</span>
-                                <span class="section-heading-lower text-white">Projeto PCB AL-B</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-B_preview_rev_1.png" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded text-white" align="justify"><p class="mb-0">A PCB AL-B é módulo carregador para 1 Bateria de lítio 18650 com saídas de 7-12V ajustável, 5V e 3.3V, até 1A, ideal para Arduino, ESP, Nodemcu, STM32, entre outras plataformas. O carregamento da bateria é feito via micro USB ou via energia solar utilizando um painel de 6V 1A.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Section Al-B -->
-
-        <!-- Section AL-32 -->
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex me-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper text-white-50">Ensino nunca foi tão fundamental</span>
-                                <span class="section-heading-lower text-white">Projeto PCB AL-32</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-32_S.jpg" alt="..." />
-                    <div class="product-item-description d-flex ms-auto">
-                        <div class="bg-faded p-5 rounded text-white" align="justify"><p class="mb-0">A PCB AL-32 utiliza o microcontrolador STM32F103C8t6 de 12bits e foi desenvolvida com objetivo educativo para jovens e adultos, que permite explorar a programação num nível novo e profissional. Os microcontroladores STM32 possuem um ótimo poder de processamento com o processador ARM Cortex-M3 e uma frequência de até 72 MHz, ele é um microcontrolador bem potente para o seu tamanho. Além disso, é possível programá-la através da IDE do Arduino.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Section Al-32 -->
-
-        <!--
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex ms-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper">From Around the World</span>
-                                <span class="section-heading-lower">Bulk Speciality Blends</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/image/AL-B_V1.0_Red_preview_rev_1.png" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-
-
-
-
+        </div>
 
 
         <!-- Footer-->
